@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="INKSPHERE — ideas beyond words. Explore stories on technology, culture, travel and everyday life." />
+  <title>INKSPHERE — Ideas Beyond Words</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="INKSPHERE home"><span class="brand-mark">I.</span> INKSPHERE</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#stories">Stories</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> THE INDEPENDENT STORY JOURNAL</p>
+        <h1>Ideas have a<br /><em>place to live.</em></h1>
+        <p class="hero-text">A little corner of the internet for curious minds. Discover fresh perspectives, thoughtful stories, and ideas worth passing on.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#stories">Explore stories <span>↗</span></a>
+          <a class="text-link" href="#about">Get to know us</a>
+        </div>
+        <div class="hero-meta"><span>EST. 2026</span><span class="meta-line"></span><span>READ. THINK. REPEAT.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative editorial artwork">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-note note-top">WORDS<br />MATTER<span>✳</span></div>
+        <div class="art-note note-bottom">MAKE SPACE<br />FOR IDEAS.</div>
+        <div class="art-center"><span>THE</span><strong>IN<br />BETWEEN</strong><small>ISSUE Nº 01</small></div>
+        <div class="art-sticker">THINK<br />DIFFERENT</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Topics"><div>STORIES WITH SOUL <span>✳</span> IDEAS THAT STICK <span>✳</span> CURIOSITY FIRST <span>✳</span> STORIES WITH SOUL <span>✳</span></div></section>
+
+    <section class="stories section-wrap" id="stories">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LATEST</p><h2>Fresh from the <em>page.</em></h2></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search stories..." aria-label="Search stories" /></label>
+      </div>
+      <div class="category-row" id="categories">
+        <button class="filter-chip active" data-category="All">All stories</button>
+        <button class="filter-chip" data-category="Culture">Culture</button>
+        <button class="filter-chip" data-category="Technology">Technology</button>
+        <button class="filter-chip" data-category="Travel">Travel</button>
+        <button class="filter-chip" data-category="Lifestyle">Lifestyle</button>
+      </div>
+      <div class="story-grid" id="storyGrid">
+        <article class="story-card featured" data-category="Culture" data-title="The beautiful art of doing nothing">
+          <div class="story-image image-culture"><span class="image-label">SLOW LIVING / 01</span><div class="sun-shape"></div><div class="hill hill-a"></div><div class="hill hill-b"></div><span class="image-word">PAUSE.</span></div>
+          <div class="story-content"><div class="story-meta"><span>CULTURE</span><span>6 MIN READ</span></div><h3>The beautiful art of doing nothing</h3><p>In a world that celebrates busy, maybe the most radical thing is to simply slow down.</p><div class="card-bottom"><span>By Alex Morgan · Oct 22, 2026</span><button class="like-button" aria-label="Like The beautiful art of doing nothing" aria-pressed="false">♡ <span>Like</span></button></div></div>
+        </article>
+        <article class="story-card" data-category="Technology" data-title="Are we designing our future or just our feeds?">
+          <div class="story-image image-tech"><span class="image-label">DIGITAL LIFE / 02</span><div class="tech-orb orb-one"></div><div class="tech-orb orb-two"></div><span class="image-word">ONLINE<br />OFFLINE</span></div>
+          <div class="story-content"><div class="story-meta"><span>TECHNOLOGY</span><span>4 MIN READ</span></div><h3>Are we designing our future or just our feeds?</h3><p>A closer look at how our digital habits shape the way we see the world.</p><div class="card-bottom"><span>By Jamie Lee · Oct 19, 2026</span><button class="like-button" aria-label="Like Are we designing our future or just our feeds?" aria-pressed="false">♡ <span>Like</span></button></div></div>
+        </article>
+        <article class="story-card" data-category="Travel" data-title="A city is best found on foot">
+          <div class="story-image image-travel"><span class="image-label">FIELD NOTES / 03</span><div class="building building-one"></div><div class="building building-two"></div><div class="building building-three"></div><span class="image-word">WANDER<br />MORE.</span></div>
+          <div class="story-content"><div class="story-meta"><span>TRAVEL</span><span>5 MIN READ</span></div><h3>A city is best found on foot</h3><p>Forget the checklist. The best travel memories often begin when you take the wrong turn.</p><div class="card-bottom"><span>By Sam Rivera · Oct 15, 2026</span><button class="like-button" aria-label="Like A city is best found on foot" aria-pressed="false">♡ <span>Like</span></button></div></div>
+        </article>
+        <article class="story-card" data-category="Lifestyle" data-title="Make room for a little more wonder">
+          <div class="story-image image-life"><span class="image-label">EVERYDAY / 04</span><div class="flower">✳</div><span class="image-word">STAY<br />CURIOUS.</span></div>
+          <div class="story-content"><div class="story-meta"><span>LIFESTYLE</span><span>3 MIN READ</span></div><h3>Make room for a little more wonder</h3><p>Small rituals, new questions, and the joy of noticing what you usually walk past.</p><div class="card-bottom"><span>By Taylor Reed · Oct 11, 2026</span><button class="like-button" aria-label="Like Make room for a little more wonder" aria-pressed="false">♡ <span>Like</span></button></div></div>
+        </article>
+      </div>
+      <p id="noResults" class="no-results" hidden>No stories found. Try another search or category.</p>
+    </section>
+
+    <section class="quote-band">
+      <p class="eyebrow">A NOTE TO OUR READERS</p>
+      <blockquote>“The world is full of stories.<br /><em>Let's pay attention.</em>”</blockquote>
+      <span class="quote-mark">✳</span>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-symbol">I<span>✳</span></div>
+      <div><p class="eyebrow">A LITTLE ABOUT US</p><h2>Curiosity is our<br /><em>common language.</em></h2></div>
+      <div class="about-copy"><p>INKSPHERE is an independent blog made for people who like to look a little closer. We share ideas, experiences, and perspectives across culture, technology, travel, and everyday life.</p><p>Consider this your invitation to read widely, think freely, and stay curious.</p><a class="text-link" href="#stories">Find your next read ↗</a></div>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">THE OCCASIONAL INBOX NOTE</p><h2>Good ideas.<br /><em>Delivered gently.</em></h2></div>
+      <form id="newsletterForm"><label for="emailInput">Your email address</label><div class="email-row"><input id="emailInput" type="email" placeholder="you@example.com" required /><button class="button button-primary" type="submit">Count me in ↗</button></div><p class="form-note" id="formMessage">No spam. Just stories worth your time.</p></form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">I.</span> INKSPHERE</a><span>Ideas beyond words.</span><span>© 2026 INKSPHERE · MADE FOR THE CURIOUS</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
